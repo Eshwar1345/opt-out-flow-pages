@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://localhost/blp-pulse-publish/assets/css/orion-core.css">
+  <link rel="stylesheet" href="http://localhost/blp-pulse-publish/assets/css/fonts/linecons/css/linecons.css">
+  <link rel="stylesheet" href="http://localhost/blp-pulse-publish/assets/css/publish-t/ceo-publish.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div style="display: table; height: 100%;">
+  <div class="sidebar-menu ng-scope toggle-others fixed">
+	<div class="sidebar-menu-inner ps-container">
+		<header class="logo-env">
+			<div class="logo">
+				<a href="" class="logo-expanded" ng-click="orionlogolink()">
+					<img src="http://192.168.1.201/blp-pulse-publish/assets/images/logo.png" width="60" alt="">
+				</a>
+			</div>
+		</header>
+		<sidebar-menu>
+			<ul id="main-menu" class="main-menu ng-scope" >
+				<li ng-controller="menuController">
+					<a href="#/app/ceo-dashboard"class="ng-scope">
+						<img ng-if="item.icon" src="http://192.168.1.201/blp-pulse-publish/assets/images/Pulse.png" width="60%" class="menu-icon ng-scope"><br class="ng-scope">
+						<span class="title ng-binding ng-scope">Pulse</span>
+					</a>
+				</li>
+				<li ng-controller="menuController">
+					<a href="#/app/publish-ceo" class="ng-scope">
+						<img ng-if="item.icon" src="http://192.168.1.201/blp-pulse-publish/assets/images/Publish.png" width="60%" class="menu-icon ng-scope"><br class="ng-scope">
+						<span class="title ng-binding ng-scope">Publish</span>
+					</a>
+				</li>
+				<li ng-controller="menuController" class="ng-scope">
+					<a href="#/app/underconstruction"class="ng-scope">
+						<img ng-if="item.icon" src="http://192.168.1.201/blp-pulse-publish/assets/images/Workflow.png" width="60%" class="menu-icon ng-scope"><br class="ng-scope">
+						<span class="title ng-binding ng-scope">Workflow</span>
+					</a>
+				</li>
+				<li ng-controller="menuController"  id="Cognito" class="ng-scope">
+					<a href="#/app/cognito"class="ng-scope">
+						<img ng-if="item.icon" src="http://192.168.1.201/blp-pulse-publish/assets/images/Cognito.png" width="60%" class="menu-icon ng-scope"><br class="ng-scope">
+						<span class="title ng-binding ng-scope">Cognito</span>
+					</a>
+				</li>
+				<li ng-controller="menuController"  id="Predicto" class="ng-scope">
+					<a href="#/app/underconstruction"class="ng-scope">
+						<img ng-if="item.icon" src="http://192.168.1.201/blp-pulse-publish/assets/images/Predicto.png" width="60%" class="menu-icon ng-scope"><br class="ng-scope">
+						<span class="title ng-binding ng-scope">Predicto</span>
+					</a>
+				</li>
+				<li ng-controller="menuController"  id="Archive" class="ng-scope">
+					<a href="#/app/archive"class="ng-scope">
+						<img ng-if="item.icon" src="http://192.168.1.201/blp-pulse-publish/assets/images/Archive.png" width="60%" class="menu-icon ng-scope"><br class="ng-scope">
+						<span class="title ng-binding ng-scope">Archive</span>
+					</a>
+				</li>
+				<li ng-controller="menuController"  id="PublishT" class="ng-scope">
+					<a href="#/app/publish-ceo-t"class="ng-scope">
+						<img ng-if="item.icon" src="http://192.168.1.201/blp-pulse-publish/assets/images/Publish.png" width="60%" class="menu-icon ng-scope"><br class="ng-scope">
+						<span class="title ng-binding ng-scope">PublishT</span>
+					</a>
+				</li>
+			</ul>
+			<div class="tooltips-container">
+				<a href="javascript:;" class="menu-icon">
+					<div class="linecons-lightbulb"></div>
+					<span class="title">Tips</span>
+				</a>
+			</div>
+		</sidebar-menu>
+	</div>
+  </div>
+</div>
+</body>
+</html>
