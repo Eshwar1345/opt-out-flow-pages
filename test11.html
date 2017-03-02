@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<style type="text/css">
+		*:focus {
+			outline: 3px solid #000;
+		}
+	</style>
+	</head>
+	<body>
+
+		<header id="header" role="banner">  
+			<div id="logo"><a href="">Logo here</a></div>
+			<nav role="navigation">
+				<ul id="mainnav">........</ul>
+			</nav>
+		</header>
+		 
+		<section id="content" role="main">  
+		 
+			<h1>A level one heading here please</h1>
+		 
+			<div role="application"><p>Here is where an application will be coded. </p></div> 
+		 
+			<article role="article">             
+					<h2 class="index-headings">Blog entry no 1</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+			</article>
+		 
+			<article role="article">
+					<h2 class="index-headings">Blog entry no 2</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+			</article>
+		 
+		</section> 
+		 
+		<aside role="complementary">  
+			<h2>Sidebar</h2>
+			<ul>......................</ul>
+		</aside>
+		 
+		<footer id="footer"  role="contentinfo">This is where the footer will stay.</footer>
+	</body>
+</html>
+
+
+<!--
+<script type="text/javascript">
+function changeText(id, text){
+document.getElementById(id).innerHTML = text;
+}
+var counter = 0;
+var colors = ['green', 'red', 'purple', 'white', 'black', 'brown'];
+function changecolor(){
+changeText('color', color[counter++]);
+if(counter >= colors.length)counter = 0;
+}
+</script>
+<p aria-live="polite" aria-atomic="true">
+My favorite color is <span id="color">blue</span>
+</p>
+<p>
+<input type="button" value="start" onclick="window.setInterval('changecolor()', 2000)" />
+</p>
+-->
+<!--
+<script>
+$("#button1").click(function(){
+	if ($("button1").attr("class", "notpressed")){
+		$("button1").attr("class", "yespressed");
+		$("button1").attr("aria-pressed", "true");
+	}
+	if ($("button1").attr("class", "yespressed")){
+		$("button1").attr("class", "notpressed");
+		$("button1").attr("aria-pressed", "false");
+	}
+})
+</script>
+<div><span class="notpressed rol="button" aria-describedby="text2" aria-pressed="false" id="button1">press me</span><div>
+
+<div id="text2">when you press the button the text will turn yellow</div>
+-->
